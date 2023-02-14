@@ -8,12 +8,13 @@
       "name": "GAS Debugging",
       "logoUrl": "https://drive.google.com/uc?id=1Tfid0B8hPNvtBzdSIK49d436oTOf2dtJ",
       "homepageTrigger": {
-        "runFunction": "launch"
+        "runFunction": "onHomepage"
       }
     },
-    "drive": {},
-    "sheets": {},
-    "documents": {},
-    "slides": {}
+    "sheets": {
+      "homepageTrigger": {
+        "runFunction": "onSheetsHomepage"
+      }
+    }
   }
 }

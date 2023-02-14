@@ -2,8 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   '@battis/eslint-config': github:battis/eslint-config
+  '@battis/gas-lighter': github:battis/gas-lighter
   '@battis/prettier-config': github:battis/prettier-config
   '@battis/webpack-typescript-gas': github:battis/webpack-typescript-gas
+
+dependencies:
+  '@battis/gas-lighter': github.com/battis/gas-lighter/465fee24c6558f436f64ecea97b3f28b41bbf573
 
 devDependencies:
   '@battis/eslint-config': github.com/battis/eslint-config/04827a55293201061bb2287b61bc84c4c3f56a05_moc43xqztdqparhsc4i72vts5q
@@ -3235,6 +3239,12 @@ packages:
       eslint-plugin-tsdoc: 0.2.17
       prettier: 2.8.4
     dev: true
+
+  github.com/battis/gas-lighter/465fee24c6558f436f64ecea97b3f28b41bbf573:
+    resolution: {tarball: https://codeload.github.com/battis/gas-lighter/tar.gz/465fee24c6558f436f64ecea97b3f28b41bbf573}
+    name: '@battis/gas-lighter'
+    version: 0.1.0
+    dev: false
 
   github.com/battis/prettier-config/9daf9e290228c33473da8ff2fe608172c0269d97_prettier@2.8.4:
     resolution: {commit: 9daf9e290228c33473da8ff2fe608172c0269d97, repo: git+ssh://git@github.com/battis/prettier-config.git, type: git}

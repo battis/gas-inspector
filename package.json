@@ -21,5 +21,8 @@
     "extends": [
       "@battis/eslint-config"
     ]
+  },
+  "dependencies": {
+    "@battis/gas-lighter": "github:battis/gas-lighter"
   }
 }
