@@ -1,3 +1,5 @@
+.clasp.json
+/build
 /node_modules
 
 /.nova/*
