@@ -3,7 +3,7 @@ import * as Card from '../Card';
 
 export function onHomepage() {
     return Terse.CardService.newCard({
-        header: 'Debugging',
+        header: 'Inspector',
         widgets: [
             Terse.CardService.newTextButton({
                 text: 'Developer Metadata',
