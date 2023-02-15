@@ -6,7 +6,7 @@
   "addOns": {
     "common": {
       "name": "GAS Debugging",
-      "logoUrl": "https://drive.google.com/uc?id=1Tfid0B8hPNvtBzdSIK49d436oTOf2dtJ",
+      "logoUrl": "https://drive.google.com/uc?id=1L5FD0jSRTQ_zpMbXW9Px4wdPDTl2RIJf",
       "homepageTrigger": {
         "runFunction": "onHomepage"
       }

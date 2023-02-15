@@ -1,6 +1,6 @@
 import { Terse } from '@battis/gas-lighter';
 
-function summarize(meta: GoogleAppsScript.Spreadsheet.DeveloperMetadata) {
+function detail(meta: GoogleAppsScript.Spreadsheet.DeveloperMetadata) {
     return {
         id: meta.getId(),
         key: meta.getKey(),
@@ -8,6 +8,10 @@ function summarize(meta: GoogleAppsScript.Spreadsheet.DeveloperMetadata) {
         location: meta.getLocation(),
         visibility: meta.getVisibility(),
     };
+}
+
+function summary(meta: GoogleAppsScript.Spreadsheet.DeveloperMetadata[]) {
+    return JSON.stringify(meta.map(detail), null, 2);
 }
 
 export function getCard() {
@@ -18,19 +22,11 @@ export function getCard() {
         widgets: [
             Terse.CardService.newDecoratedText({
                 topLabel: 'Spreadsheet',
-                text: JSON.stringify(
-                    spreadsheet.getDeveloperMetadata().map(summarize),
-                    null,
-                    2
-                ),
+                text: summary(spreadsheet.getDeveloperMetadata()),
             }),
             Terse.CardService.newDecoratedText({
                 topLabel: 'Sheet',
-                text: JSON.stringify(
-                    sheet.getDeveloperMetadata().map(summarize),
-                    null,
-                    2
-                ),
+                text: summary(sheet.getDeveloperMetadata()),
             }),
         ],
     });
